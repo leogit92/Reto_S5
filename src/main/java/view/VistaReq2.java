@@ -53,8 +53,8 @@ public class VistaReq2 extends JFrame {
             for (int iY = 0; iY < proyectos.size(); iY++){
                 dataReq2[iY][0] = ""+proyectos.get(iY).getNum_habitaciones();
                 dataReq2[iY][1] = ""+proyectos.get(iY).getNum_banios();
-                dataReq2[iY][2] = proyectos.get(iY).getNombreLider();
-                dataReq2[iY][3] = proyectos.get(iY).getApellidoLider();
+                dataReq2[iY][2] = proyectos.get(iY).getLider().getNombre();
+                dataReq2[iY][3] = proyectos.get(iY).getLider().getApellido();
                 dataReq2[iY][4] = ""+proyectos.get(iY).getEstrato_proyecto();
             }
 

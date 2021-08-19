@@ -61,8 +61,7 @@ public class ProyectoDao {
                 objProyecto.setNum_habitaciones( resultado.getInt("Numero_Habitaciones"));
                 objProyecto.setNum_banios(resultado.getInt("Numero_Banos"));
                 objProyecto.setEstrato_proyecto( resultado.getInt("Estrato"));
-                objProyecto.setNombreLider(resultado.getString("Nombre"));
-                objProyecto.setApellidoLider(resultado.getString("Primer_Apellido"));
+                objProyecto.setLider(resultado.getString("Nombre"), resultado.getString("Primer_Apellido"));
                 arrayProyecto.add(objProyecto);
             }
             conn.close();
